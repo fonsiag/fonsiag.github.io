@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfonso Aparicio — Ingeniero de Control</title>
+<meta name="description" content="Alfonso Aparicio, ingeniero de control especializado en CI/CD, Simulink e integración de sistemas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="wordmark">A. Aparicio</a>
+    <nav class="main-nav">
+      <a href="#about" data-i18n="nav.about">Sobre mí</a>
+      <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+      <a href="#services" data-i18n="nav.services">Servicios</a>
+      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+      <span class="lang-opt is-active" data-lang="es">ES</span>
+      <span class="lang-sep">/</span>
+      <span class="lang-opt" data-lang="en">EN</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow-tag"><span class="dot"></span><span data-i18n="hero.eyebrow">Ingeniería de control · CI/CD · Simulink</span></p>
+      <h1 data-i18n="hero.headline">Muevo modelos de Simulink hasta software real, en producción.</h1>
+      <p class="hero-sub" data-i18n="hero.sub">Llevo tus modelos de control desde la simulación hasta el sistema desplegado: menos trabajo manual, menos sorpresas cuando el código ya está corriendo.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Cuéntame tu proyecto</a>
+        <a href="Alfonso_Aparicio_CV.pdf" class="btn btn-ghost" download data-i18n="hero.cta3">Descargar CV</a>
+        <a href="#projects" class="btn btn-text" data-i18n="hero.cta2">Ver proyectos →</a>
+      </div>
+    </div>
+
+    <div class="hero-portrait">
+      <div class="portrait-frame">
+        <span class="corner corner-tl" aria-hidden="true"></span>
+        <span class="corner corner-tr" aria-hidden="true"></span>
+        <span class="corner corner-bl" aria-hidden="true"></span>
+        <span class="corner corner-br" aria-hidden="true"></span>
+        <img src="images/alfonso.jpg" alt="Alfonso Aparicio" class="portrait-img" onerror="this.parentElement.classList.add('portrait-missing')">
+        <div class="portrait-placeholder" aria-hidden="true">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="45" r="22"/>
+            <path d="M20 108c4-24 20-38 40-38s36 14 40 38"/>
+          </svg>
+          <span data-i18n="hero.photoPlaceholder">Añade tu foto en images/alfonso.jpg</span>
+        </div>
+      </div>
+      <span class="portrait-caption diagram-label" data-i18n="hero.portraitCaption">FIG. 00 — ALFONSO APARICIO</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about wrap">
+    <div class="section-head">
+      <span class="section-tag">01</span>
+      <h2 data-i18n="about.title">Sobre mí</h2>
+    </div>
+
+    <div class="about-grid">
+      <p class="about-lead" data-i18n="about.lead">Me dedico a conectar el modelo con la máquina real. Genero código y DLLs desde Simulink, automatizo los tests que nadie quiere hacer a mano, y construyo los pipelines de CI/CD que hacen que un cambio llegue a producción sin sustos.</p>
+
+      <div class="hero-diagram" aria-hidden="true">
+        <svg viewBox="0 0 460 320" xmlns="http://www.w3.org/2000/svg" class="pipeline-svg">
+          <line x1="70" y1="60" x2="70" y2="260" stroke="var(--grid)" stroke-width="1" stroke-dasharray="2 4"/>
+
+          <g class="node n1">
+            <rect x="20" y="30" width="140" height="56" rx="2"/>
+            <text x="90" y="53" text-anchor="middle" class="node-title">Simulink</text>
+            <text x="90" y="70" text-anchor="middle" class="node-sub">Modelo</text>
+          </g>
+
+          <path class="flow-line" d="M160 58 H 230" />
+          <path class="arrowhead" d="M224 52 L 234 58 L 224 64 Z" />
+
+          <g class="node n2">
+            <rect x="234" y="30" width="150" height="56" rx="2"/>
+            <text x="309" y="48" text-anchor="middle" class="node-title">Code Gen</text>
+            <text x="309" y="65" text-anchor="middle" class="node-sub">DLL / C</text>
+          </g>
+
+          <path class="flow-line" d="M309 86 V 144" />
+          <path class="arrowhead" d="M303 138 L 309 148 L 315 138 Z" />
+
+          <g class="node n3">
+            <rect x="180" y="144" width="204" height="56" rx="2"/>
+            <text x="282" y="167" text-anchor="middle" class="node-title">CI/CD Pipeline</text>
+            <text x="282" y="184" text-anchor="middle" class="node-sub">Build · Test · Version</text>
+          </g>
+
+          <path class="flow-line" d="M282 200 V 244" />
+          <path class="arrowhead" d="M276 238 L 282 248 L 288 238 Z" />
+
+          <g class="node n4 node-final">
+            <rect x="152" y="248" width="180" height="56" rx="2"/>
+            <text x="242" y="271" text-anchor="middle" class="node-title">Controlador</text>
+            <text x="242" y="288" text-anchor="middle" class="node-sub">Desplegado</text>
+          </g>
+
+          <text x="20" y="20" class="diagram-label">FIG. 01 — PIPELINE MBD</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="capability-list">
+      <div class="capability">
+        <h3 data-i18n="cap1.title">Código y DLLs</h3>
+        <p data-i18n="cap1.body">Tu modelo de Simulink se convierte en una interfaz DLL lista para integrar. Sin picar código a mano, sin errores de traducción.</p>
+      </div>
+      <div class="capability">
+        <h3 data-i18n="cap2.title">Tests de integración</h3>
+        <p data-i18n="cap2.body">Cada cambio se valida solo, antes de llegar a producción. El pipeline de regresión hace el trabajo que nadie quiere hacer manualmente.</p>
+      </div>
+      <div class="capability">
+        <h3 data-i18n="cap3.title">Repositorios y CI/CD</h3>
+        <p data-i18n="cap3.body">Control de versiones y compilación automática. Tu código queda trazable y desplegable en cualquier momento, no solo cuando alguien se acuerda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects wrap">
+    <div class="section-head">
+      <span class="section-tag">02</span>
+      <h2 data-i18n="projects.title">Proyectos</h2>
+    </div>
+
+    <article class="project-row">
+      <span class="project-id">P.01</span>
+      <div class="project-body">
+        <h3 data-i18n="proj1.title">Generación de interfaces DLL desde modelos Simulink</h3>
+        <p data-i18n="proj1.body">Desarrollo de un flujo de generación automática de interfaces DLL a partir de modelos de Simulink, reduciendo el trabajo manual de integración entre el modelo de control y el software final.</p>
+        <div class="tag-row">
+          <span class="tag">Simulink</span><span class="tag">Code Generation</span><span class="tag">DLL</span><span class="tag">MBD</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-row">
+      <span class="project-id">P.02</span>
+      <div class="project-body">
+        <h3 data-i18n="proj2.title">CI/CD para sistemas de control</h3>
+        <p data-i18n="proj2.body">Integración de un pipeline de compilación automática con tests de regresión y control de versiones, permitiendo detectar errores de integración antes del despliegue.</p>
+        <div class="tag-row">
+          <span class="tag">CI/CD</span><span class="tag">Test de Regresión</span><span class="tag">Control de Versiones</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-row">
+      <span class="project-id">P.03</span>
+      <div class="project-body">
+        <h3 data-i18n="proj3.title">Arquitectura de software para controlador de parque</h3>
+        <p data-i18n="proj3.body">Diseño de la arquitectura de software de un controlador de parque con múltiples funciones interconectadas, definiendo interfaces claras bajo un enfoque de Model-Based Design.</p>
+        <div class="tag-row">
+          <span class="tag">MBD</span><span class="tag">Arquitectura de Sistemas</span><span class="tag">Integración en Red</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services wrap">
+    <div class="section-head">
+      <span class="section-tag">03</span>
+      <h2 data-i18n="services.title">Servicios</h2>
+    </div>
+
+    <div class="service-grid">
+      <div class="service">
+        <h3 data-i18n="serv1.title">Generación de código y DLLs</h3>
+        <p data-i18n="serv1.body">De modelo a interfaz de software lista para integrar en tu sistema.</p>
+      </div>
+      <div class="service">
+        <h3 data-i18n="serv2.title">CI/CD y automatización de tests</h3>
+        <p data-i18n="serv2.body">Pipelines que validan cada cambio automáticamente, sin trabajo manual.</p>
+      </div>
+      <div class="service">
+        <h3 data-i18n="serv3.title">Arquitectura de sistemas (MBD)</h3>
+        <p data-i18n="serv3.body">Definición de interfaces y estructura para sistemas de control complejos.</p>
+      </div>
+    </div>
+    <p class="services-note" data-i18n="services.note">¿No ves tu problema aquí exactamente? Cuéntamelo de todas formas — casi siempre se resuelve con el enfoque correcto.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact wrap">
+    <div class="section-head">
+      <span class="section-tag">04</span>
+      <h2 data-i18n="contact.title">Contacto</h2>
+    </div>
+    <p class="contact-lead" data-i18n="contact.lead">¿Tienes un problema de integración de control que resolver? Escríbeme, sin rodeos.</p>
+    <div class="contact-links">
+      <a href="mailto:tu-email@ejemplo.com" class="contact-link">
+        <span class="contact-label" data-i18n="contact.email">Email</span>
+        <span class="contact-value">tu-email@ejemplo.com</span>
+      </a>
+      <a href="https://linkedin.com/in/tu-usuario" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">linkedin.com/in/tu-usuario</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>&copy; <span id="year"></span> Alfonso Aparicio</span>
+    <span class="footer-mono">/// EOF</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
