@@ -10,7 +10,7 @@
   --grid: #D8DCD9;
   --line: #C7CCC6;
   --radius: 2px;
-  --max-width: 880px;
+  --max-width: 1180px;
   --font-display: "Space Grotesk", "Inter", sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
@@ -152,8 +152,8 @@ button:focus-visible {
 /* ===== Hero ===== */
 .hero {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 48px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  gap: 80px;
   align-items: center;
   padding-top: 88px;
   padding-bottom: 88px;
@@ -181,7 +181,7 @@ button:focus-visible {
   font-size: clamp(38px, 5vw, 64px);
   line-height: 1.05;
   letter-spacing: -0.05em;
-  max-width: 13ch;
+  max-width: 15ch;
 }
 
 .hero h1 .highlight {
