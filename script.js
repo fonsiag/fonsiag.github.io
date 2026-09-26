@@ -12,11 +12,22 @@ const translations = {
     "hero.cta": "Cuéntame tu proyecto",
     "hero.cta2": "Ver proyectos →",
     "hero.cta3": "Descargar CV",
-    "hero.photoPlaceholder": "Añade tu foto en images/alfonso.jpg",
+    "hero.photoPlaceholder": "Perfil técnico",
     "hero.portraitCaption": "FIG. 00 — ALFONSO APARICIO",
 
     "about.title": "Sobre mí",
     "about.lead": "Me dedico a conectar el modelo con la máquina real. Genero código y DLLs desde Simulink, automatizo los tests que nadie quiere hacer a mano, y construyo los pipelines de CI/CD que hacen que un cambio llegue a producción sin sustos.",
+
+    "focus.label": "Enfoque",
+    "focus.title": "Trayectoria enfocada en control, MBD y automatización",
+    "focus.item1": "Especialización en Model-Based Design, Simulink, generación de código y control de equipos reales.",
+    "focus.item2": "Aplicado a energía renovable, automatización industrial y sistemas de control con alta trazabilidad.",
+    "focus.item3": "Flujos de trabajo con Git, CI/CD y validación automática para reducir errores de integración.",
+    "work.label": "Cómo trabajo",
+    "work.title": "Consultoría técnica sin fricción",
+    "work.item1": "Diagnóstico rápido del problema técnico y del punto donde la integración se vuelve frágil.",
+    "work.item2": "Diseño de flujo de generación, validación y despliegue del software de control.",
+    "work.item3": "Trabajo remoto, híbrido o presencial según el proyecto y la etapa de integración.",
 
     "cap1.title": "Código y DLLs",
     "cap1.body": "Tu modelo de Simulink se convierte en una interfaz DLL lista para integrar. Sin picar código a mano, sin errores de traducción.",
@@ -44,7 +55,13 @@ const translations = {
 
     "contact.title": "Contacto",
     "contact.lead": "¿Tienes un problema de integración de control que resolver? Escríbeme, sin rodeos.",
-    "contact.email": "Email"
+    "contact.email": "Email",
+    "meta.mode": "Modalidad",
+    "meta.modeValue": "Remoto · híbrido · presencial",
+    "meta.availability": "Disponibilidad",
+    "meta.availabilityValue": "Proyectos de integración, automatización y consultoría técnica",
+    "meta.rate": "Trabajo",
+    "meta.rateValue": "Por proyecto o colaboración puntual"
   },
   en: {
     "nav.about": "About",
@@ -58,11 +75,22 @@ const translations = {
     "hero.cta": "Tell me about your project",
     "hero.cta2": "View projects →",
     "hero.cta3": "Download CV",
-    "hero.photoPlaceholder": "Add your photo at images/alfonso.jpg",
+    "hero.photoPlaceholder": "Technical profile",
     "hero.portraitCaption": "FIG. 00 — ALFONSO APARICIO",
 
     "about.title": "About",
     "about.lead": "I connect the model to the real machine. I generate code and DLLs from Simulink, automate the tests nobody wants to run by hand, and build the CI/CD pipelines that let a change reach production without surprises.",
+
+    "focus.label": "Focus",
+    "focus.title": "A technical trajectory built around control, MBD and automation",
+    "focus.item1": "Specialized in Model-Based Design, Simulink, code generation and real machine control.",
+    "focus.item2": "Applied to renewable energy, industrial automation and high-traceability control systems.",
+    "focus.item3": "Working with Git, CI/CD and automated validation to reduce integration errors.",
+    "work.label": "How I work",
+    "work.title": "Technical consulting without friction",
+    "work.item1": "Fast diagnosis of the technical issue and the point where integration becomes fragile.",
+    "work.item2": "Design of a generation, validation and deployment flow for control software.",
+    "work.item3": "Remote, hybrid or on-site work depending on the project and integration stage.",
 
     "cap1.title": "Code and DLLs",
     "cap1.body": "Your Simulink model becomes a DLL interface ready to integrate. No hand-coding, no translation errors.",
@@ -90,7 +118,13 @@ const translations = {
 
     "contact.title": "Contact",
     "contact.lead": "Have a control integration problem to solve? Get in touch, no small talk needed.",
-    "contact.email": "Email"
+    "contact.email": "Email",
+    "meta.mode": "Mode",
+    "meta.modeValue": "Remote · hybrid · on-site",
+    "meta.availability": "Availability",
+    "meta.availabilityValue": "Integration, automation and technical consulting projects",
+    "meta.rate": "Engagement",
+    "meta.rateValue": "Project-based or short-term collaboration"
   }
 };
 
